@@ -13,4 +13,10 @@ public class Zookeeper {
 		System.out.println("Ingrijitorul "+this.nume +" hraneste animalul "+a.getNume());
 	}
 
+	@Override
+	public String toString() {
+		return "Zookeeper [nume=" + nume + "]";
+	}
+	
+
 }

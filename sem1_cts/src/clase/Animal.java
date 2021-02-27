@@ -16,6 +16,12 @@ public abstract class Animal {
 	public void setNume(String nume) {
 		this.nume = nume;
 	}
+
+	@Override
+	public String toString() {
+		return "Animal [nume=" + nume + "]";
+	}
+	
 	
 	
 
