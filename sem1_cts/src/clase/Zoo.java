@@ -30,6 +30,11 @@ public class Zoo {
 			zookeeper.feed(a);
 		}
 	}
+	public void mergAnimale() {
+        for (Animal animal:this.animale) {
+            animal.merge();
+        }
+    }
 	
 	
 	
