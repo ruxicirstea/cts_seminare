@@ -1,6 +1,6 @@
 package clase;
 
-public class Girafa extends Animal{
+public class Girafa extends Animal {
 	private int inaltime;
 
 	public Girafa(String nume, int inaltime) {
@@ -23,6 +23,18 @@ public class Girafa extends Animal{
 	public void setInaltime(int inaltime) {
 		this.inaltime = inaltime;
 	}
+
+
+
+	@Override
+	public void merge() {
+		// TODO Auto-generated method stub
+		System.out.println("Girafa merge cu capul pe sus!");
+		
+	}
+
+
+
 	
 	
 
