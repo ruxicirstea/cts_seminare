@@ -23,14 +23,14 @@ public abstract class ReaderAplicanti {
 		int varsta = input.nextInt();
 		int punctaj = input.nextInt();
 		int nr = input.nextInt();
-		String[] vect = new String[5];
+		String[] vectorDenumiriProiecte = new String[5];
 		for (int i = 0; i < nr; i++)
-			vect[i] = input.next();
+			vectorDenumiriProiecte[i] = input.next();
 		aplicant.setNume(nume);
 		aplicant.setPrenume(prenume);
 		aplicant.setVarsta(varsta);
 		aplicant.setPunctaj(punctaj);
-		aplicant.setDenumireProiect(vect,nr);
+		aplicant.setDenumireProiect(vectorDenumiriProiecte,nr);
     }
 
 }

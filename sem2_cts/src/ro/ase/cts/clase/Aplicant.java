@@ -9,6 +9,21 @@ public abstract class Aplicant{
 	protected int punctaj;
 	protected int nrProiecte;
 	protected String[] denumireProiect;
+
+	public Aplicant() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
+		super();
+		this.nume = nume;
+		this.prenume = prenume;
+		this.varsta = varsta;
+		this.punctaj = punctaj;
+		this.nrProiecte = nr_proiecte;
+		this.denumireProiect = denumireProiect;
+	}
+
 	
 	
 	public String getNume() {
@@ -29,21 +44,12 @@ public abstract class Aplicant{
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
-	public void afiseazaStatusPeProiect(Proiect proiect){
-		StringBuilder stringBuilder =new StringBuilder();
-		stringBuilder.append("Aplicantul ").append(this.nume).append(" ").append(this.prenume);
-		stringBuilder.append(punctaj >proiect.getPragAcceptare() ? " a fost acceptat" : " nu a fost acceptat");
-		System.out.println(stringBuilder.toString());
-		
-	}
-			
 	public int getPunctaj() {
 		return punctaj;
 	}
 	public void setPunctaj(int punctaj) {
 		this.punctaj = punctaj;
 	}
-	
 	public String[] getDenumireProiect() {
 		return denumireProiect;
 	}
@@ -51,23 +57,15 @@ public abstract class Aplicant{
 		this.denumireProiect = denumireProiect;
 		this.nrProiecte=nrProiecte;
 	}
-	public Aplicant() {
-		super();
-		// TODO Auto-generated constructor stub
+
+	public void afiseazaStatusPeProiect(Proiect proiect){
+		StringBuilder stringBuilder =new StringBuilder();
+		stringBuilder.append("Aplicantul ").append(this.nume).append(" ").append(this.prenume);
+		stringBuilder.append(punctaj >proiect.getPragAcceptare() ? " a fost acceptat" : " nu a fost acceptat");
+		System.out.println(stringBuilder.toString());
+		
 	}
-	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
-		super();
-		this.nume = nume;
-		this.prenume = prenume;
-		this.varsta = varsta;
-		this.punctaj = punctaj;
-		this.nrProiecte = nr_proiecte;
-		this.denumireProiect = denumireProiect;
-	}
-	public int getNr_proiecte() {
-		return nrProiecte;
-	}
-	
+
 	
 	public abstract void afisareSumaFinantata();
 	public String compunereStringPentruSumaFinantata(int suma, String tipAplicant)
