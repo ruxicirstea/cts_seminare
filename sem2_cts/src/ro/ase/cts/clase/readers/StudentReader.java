@@ -11,31 +11,26 @@ import ro.ase.cts.clase.Student;
 
 public class StudentReader extends ReaderAplicanti {
 
-
 	public StudentReader(String fileName) {
 		super(fileName);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public List<Aplicant> readAplicanti() throws FileNotFoundException {
-		// TODO Auto-generated method stub
-		Scanner input = new Scanner(new File(super.fileName));
-		input.useDelimiter(",|\n");
+		Scanner scanner = new Scanner(new File(super.fileName));
+		scanner.useDelimiter(",|\n");
 		List<Aplicant> studenti = new ArrayList<Aplicant>();
 
-		while (input.hasNext()) {
+		while (scanner.hasNext()) {
 			Student student =new Student();
-			super.readAplicant(student, input);
-			int anStudii= input.nextInt();
-			String facultate = (input.next()).toString();
+			super.readAplicant(student, scanner);
+			int anStudii= scanner.nextInt();
+			String facultate = (scanner.next()).toString();
 			student.setAnStudii(anStudii);
 			student.setFacultate(facultate);
 			studenti.add(student);
 		}
-		input.close();
+		scanner.close();
 		return studenti;
-		
 	}
-
 }

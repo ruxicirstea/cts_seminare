@@ -10,31 +10,28 @@ import ro.ase.cts.clase.Aplicant;
 import ro.ase.cts.clase.Elev;
 
 public class ElevReader extends ReaderAplicanti {
-	
+
 	public ElevReader(String fileName) {
 		super(fileName);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public List<Aplicant> readAplicanti() throws FileNotFoundException {
-		Scanner input2 = new Scanner(new File(super.fileName));
-		input2.useDelimiter(",|\n");
+		Scanner scanner = new Scanner(new File(super.fileName));
+		scanner.useDelimiter(",|\n");
 		List<Aplicant> elevi = new ArrayList<Aplicant>();
 
-		while (input2.hasNext()) {
+		while (scanner.hasNext()) {
 		    Elev elev =new Elev();
-		    super.readAplicant(elev, input2);
-			int clasa = input2.nextInt();
-			String tutore = input2.next();
+		    super.readAplicant(elev, scanner);
+			int clasa = scanner.nextInt();
+			String tutore = scanner.next();
 			elev.setClasa(clasa);
 			elev.setTutore(tutore);
 			elevi.add(elev);
 		}
 
-		input2.close();
+		scanner.close();
 		return elevi;
-	
 	}
-
 }

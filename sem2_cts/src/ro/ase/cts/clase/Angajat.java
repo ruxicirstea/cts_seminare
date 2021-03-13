@@ -1,7 +1,5 @@
 package ro.ase.cts.clase;
 
-import java.util.Arrays;
-
 public class Angajat extends Aplicant{
 	private String ocupatie;
 	private int salariu;
@@ -12,20 +10,23 @@ public class Angajat extends Aplicant{
 		this.salariu = salariu;
 		this.ocupatie = ocupatie;
 	}
+
 	public Angajat() {
 		super();
-
 	}
 	
 	public String getOcupatie() {
 		return ocupatie;
 	}
+
 	public void setOcupatie(String ocupatie) {
 		this.ocupatie = ocupatie;
 	}
+
 	public int getSalariu() {
 		return salariu;
 	}
+
 	public void setSalariu(int salariu) {
 		this.salariu = salariu;
 	}
@@ -41,7 +42,5 @@ public class Angajat extends Aplicant{
 	@Override
 	public void afisareSumaFinantata() {
 		System.out.println(super.compunereStringPentruSumaFinantata(sumaFinantata, "Angajatul"));
-		
 	}
-	
 }

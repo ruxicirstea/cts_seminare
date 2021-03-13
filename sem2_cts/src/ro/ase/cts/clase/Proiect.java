@@ -1,7 +1,6 @@
 package ro.ase.cts.clase;
 
 public class Proiect {
-
 	private int pragAcceptare;
 
 	public Proiect(int pragAcceptare) {
@@ -12,6 +11,4 @@ public class Proiect {
 	public int getPragAcceptare() {
 		return pragAcceptare;
 	}
-
-	
 }

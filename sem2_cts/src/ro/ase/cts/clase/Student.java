@@ -7,10 +7,10 @@ public class Student extends Aplicant {
 
 	public Student() {
 		super();
-
 	}
-	public Student(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect, String facultate, int an_studii) {
-		super(nume,prenume,varsta,punctaj,nr_proiecte,denumireProiect);
+
+	public Student(String nume, String prenume, int varsta, int punctaj, int nrProiecte, String[] denumiriProiect, String facultate, int an_studii) {
+		super(nume,prenume,varsta,punctaj,nrProiecte,denumiriProiect);
 		this.facultate = facultate;
 		this.anStudii = an_studii;
 	}
@@ -18,12 +18,15 @@ public class Student extends Aplicant {
 	public String getFacultate() {
 		return facultate;
 	}
+
 	public void setFacultate(String facultate) {
 		this.facultate = facultate;
 	}
+
 	public int getAnStudii() {
 		return anStudii;
 	}
+
 	public void setAnStudii(int anStudii) {
 		this.anStudii = anStudii;
 	}
@@ -35,17 +38,9 @@ public class Student extends Aplicant {
 		.append("Facultate= ").append(this.facultate).append(" An Studii ").append(this.anStudii);
 		return stringBuilder.toString();
 	}
+
 	@Override
 	public void afisareSumaFinantata() {
-		// TODO Auto-generated method stub
-		
-			System.out.println(super.compunereStringPentruSumaFinantata(sumaFinantata, "Studentul"));
-			
-		
-		
+		System.out.println(super.compunereStringPentruSumaFinantata(sumaFinantata, "Studentul"));
 	}
-	
-	
-	
-	
 }

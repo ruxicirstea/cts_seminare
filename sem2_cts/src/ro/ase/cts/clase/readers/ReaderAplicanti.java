@@ -8,16 +8,15 @@ import ro.ase.cts.clase.Aplicant;
 
 public abstract class ReaderAplicanti {
 	protected String fileName;	
-	
-    public ReaderAplicanti(String fileName) {
+
+	public ReaderAplicanti(String fileName) {
 		super();
 		this.fileName = fileName;
 	}
 
 	public abstract	List<Aplicant> readAplicanti() throws FileNotFoundException;
     
-    public void readAplicant(Aplicant aplicant, Scanner input)
-    {
+    public void readAplicant(Aplicant aplicant, Scanner input) {
     	String nume = input.next();
 		String prenume = input.next();
 		int varsta = input.nextInt();
