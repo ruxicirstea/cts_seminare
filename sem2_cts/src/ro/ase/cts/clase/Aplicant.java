@@ -7,7 +7,7 @@ public abstract class Aplicant{
 	protected String prenume;
 	protected int varsta;
 	protected int punctaj;
-	protected int nr_proiecte;
+	protected int nrProiecte;
 	protected String[] denumireProiect;
 	
 	
@@ -49,7 +49,7 @@ public abstract class Aplicant{
 	}
 	public void setDenumireProiect(String[] denumireProiect, int nrProiecte) {
 		this.denumireProiect = denumireProiect;
-		this.nr_proiecte=nrProiecte;
+		this.nrProiecte=nrProiecte;
 	}
 	public Aplicant() {
 		super();
@@ -61,11 +61,11 @@ public abstract class Aplicant{
 		this.prenume = prenume;
 		this.varsta = varsta;
 		this.punctaj = punctaj;
-		this.nr_proiecte = nr_proiecte;
+		this.nrProiecte = nr_proiecte;
 		this.denumireProiect = denumireProiect;
 	}
 	public int getNr_proiecte() {
-		return nr_proiecte;
+		return nrProiecte;
 	}
 	
 	
@@ -95,7 +95,7 @@ public abstract class Aplicant{
 		builder.append(", punctaj=");
 		builder.append(punctaj);
 		builder.append(", nr_proiecte=");
-		builder.append(nr_proiecte);
+		builder.append(nrProiecte);
 		builder.append(", denumireProiect=");
 		builder.append(Arrays.toString(denumireProiect));
 		builder.append("]");
