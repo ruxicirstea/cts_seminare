@@ -1,6 +1,8 @@
 package clase;
 
-public abstract class Animal {
+import interfaces.Mers;
+
+public abstract class Animal implements Mers{
 	private String nume;
 	
 
@@ -21,6 +23,7 @@ public abstract class Animal {
 	public String toString() {
 		return "Animal [nume=" + nume + "]";
 	}
+
 	
 	
 	
