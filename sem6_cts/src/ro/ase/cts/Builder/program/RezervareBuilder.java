@@ -4,9 +4,14 @@ import ro.ase.cts.Builder.Rezervare;
 
 public class RezervareBuilder implements AbstractBuilder{
   private  Rezervare rezervare;
+  private int cod;
 
     public RezervareBuilder() {
         this.rezervare = new Rezervare();
+    }
+    public RezervareBuilder(int cod)
+    {
+        this.rezervare=new Rezervare(cod,false,false,false,false,null);
     }
     public RezervareBuilder setCod(int cod)
     {
