@@ -1,8 +1,6 @@
-package ro.ase.cts.Builder.program;
+package ro.ase.cts.Builder;
 
-import ro.ase.cts.Builder.Rezervare;
-
-public class RezervareBuilder implements AbstractBuilder{
+public class RezervareBuilder implements AbstractBuilder {
   private  Rezervare rezervare;
   private int cod;
 

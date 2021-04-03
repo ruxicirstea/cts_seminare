@@ -1,4 +1,4 @@
-package ro.ase.cts.Builder.program;
+package ro.ase.cts.Builder;
 
 import ro.ase.cts.Builder.Rezervare;
 
