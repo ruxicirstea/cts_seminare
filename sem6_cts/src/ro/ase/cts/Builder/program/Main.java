@@ -26,7 +26,6 @@ public class Main {
         rezervareBuilderV2.setAreBauturaInclusa(true).setAreBauturaInclusa(true);
         Rezervare rezervare2 =rezervareBuilderV2.setCod(40).build();
         System.out.println(rezervare2.toString());
-
     }
 
 }
