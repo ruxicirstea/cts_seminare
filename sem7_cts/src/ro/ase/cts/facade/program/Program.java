@@ -8,7 +8,7 @@ import ro.ase.cts.facade.VerificatorPersoana;
 public class Program {
     public static void main(String[] args) {
         Persoana persoana = new Persoana("Gigel", "2991121793935");
-        if (persoana.getVarsta() > 18) {
+        if (persoana.getVarsta() >= 18) {
             if (!Politie.esteUrmarit(persoana)) {
                 BirouDeCredite birouDeCredite = new BirouDeCredite();
                 if (!birouDeCredite.areCredite(persoana)) {
