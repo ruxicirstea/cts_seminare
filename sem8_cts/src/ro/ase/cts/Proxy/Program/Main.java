@@ -1,4 +1,4 @@
-package ro.ase.cts.Program;
+package ro.ase.cts.Proxy.Program;
 
 import ro.ase.cts.Proxy.OperatorRezervari;
 import ro.ase.cts.Proxy.ProxyOperatorRezervari;
