@@ -1,8 +1,6 @@
-package ro.ase.cts.program;
+package ro.ase.cts.command.program;
 
 import ro.ase.cts.command.*;
-
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
