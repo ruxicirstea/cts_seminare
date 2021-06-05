@@ -1,9 +1,9 @@
-package ro.ase.java.tests;
+package ro.ase.cts.tests;
 
 import org.junit.Test;
-import ro.ase.java.classes.Grupa;
-import ro.ase.java.classes.IStudent;
-import ro.ase.java.classes.Student;
+import ro.ase.cts.classes.Grupa;
+import ro.ase.cts.classes.IStudent;
+import ro.ase.cts.classes.Student;
 
 import static org.junit.Assert.*;
 

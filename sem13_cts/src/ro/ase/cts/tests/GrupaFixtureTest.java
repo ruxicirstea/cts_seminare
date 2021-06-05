@@ -1,11 +1,9 @@
-package ro.ase.java.tests;
+package ro.ase.cts.tests;
 
 import org.junit.Before;
 import org.junit.Test;
-import ro.ase.java.classes.Grupa;
-import ro.ase.java.classes.Student;
-
-import static org.junit.Assert.*;
+import ro.ase.cts.classes.Grupa;
+import ro.ase.cts.classes.Student;
 
 public class GrupaFixtureTest {
     private Grupa grupa;
