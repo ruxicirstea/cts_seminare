@@ -1,10 +1,13 @@
 package ro.ase.cts.tests;
 
 import org.junit.Test;
+import ro.ase.cts.categories.TesteUrgente;
 import ro.ase.cts.classes.Grupa;
 import ro.ase.cts.mocks.StudentDummy;
 import ro.ase.cts.mocks.StudentFake;
 import ro.ase.cts.mocks.StudentStub;
+
+import java.util.Locale;
 
 import static org.junit.Assert.*;
 
@@ -28,6 +31,7 @@ public class GrupaWithMocksTest {
 
         assertEquals(0, grupa.getPromovabilitate(),0.01);
     }
+
 
     @Test
     public void testGrupaWithFakeRight()
